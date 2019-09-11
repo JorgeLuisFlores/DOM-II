@@ -38,6 +38,7 @@ window.addEventListener("resize", event => {
 const signUpAlert = document.querySelector(".btn");
 signUpAlert.addEventListener("click", event => {
   alert("Our Sign-Up page is currently down!");
+  event.preventDefault();
 });
 
 //7
@@ -48,7 +49,7 @@ introText.addEventListener("copy", event => {
 
 //8
 let foot = document.querySelector(".footer");
-let footZoom = function(e) {
+let footZoom = function (e) {
   e.target.style.fontSize = "3rem";
   e.preventDefault();
 };
@@ -62,6 +63,6 @@ window.addEventListener("load", event => {
 //10
 const bodyScroll = document.querySelector("body");
 const navScroll = document.querySelector(".main-navigation");
-bodyScroll.addEventListener("keydown", function() {
+bodyScroll.addEventListener("keydown", function () {
   navScroll.style.position = "absolute";
 });
