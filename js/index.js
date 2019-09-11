@@ -20,6 +20,7 @@ const sizeUp = document.querySelector(".img-content");
 sizeUp.addEventListener("mouseover", event => {
   sizeUp.style.transform = "scale(1.5)";
   sizeUp.style.transition = "transform 0.5s";
+  event.stopPropagation();
 });
 
 //4
